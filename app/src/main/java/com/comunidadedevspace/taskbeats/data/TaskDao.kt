@@ -1,4 +1,4 @@
-package com.comunidadedevspace.taskbeats
+package com.comunidadedevspace.taskbeats.data
 
 import androidx.room.Dao
 import androidx.room.Insert

@@ -1,4 +1,4 @@
-package com.comunidadedevspace.taskbeats
+package com.comunidadedevspace.taskbeats.presentation
 
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
@@ -11,11 +11,13 @@ import android.widget.LinearLayout
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
+import com.comunidadedevspace.taskbeats.R
+import com.comunidadedevspace.taskbeats.data.AppDataBase
+import com.comunidadedevspace.taskbeats.data.Task
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
-import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.launch
 import java.io.Serializable
 
@@ -132,7 +134,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun openTaskListDetail (task: Task? )
     {
-        val intent =TaskDetailActivity.start(this, task)
+        val intent = TaskDetailActivity.start(this, task)
         startForResult.launch(intent)
     }
 
