@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity() {
         val fab = findViewById<FloatingActionButton>(R.id.fab_add)
         fab.setOnClickListener {
             openTaskListDetail(null)
-
         }
     }
 
