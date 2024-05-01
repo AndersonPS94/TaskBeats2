@@ -48,6 +48,8 @@ dependencies {
     def fragment_version = "1.5.6"
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
 
+
+
     def lifecycle_version = "2.7.0"
     def arch_version = "2.2.0"
 
