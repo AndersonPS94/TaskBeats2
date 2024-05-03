@@ -44,8 +44,6 @@ class TaskDetailViewModel(
         }
     }
 
-
-
     companion object {
 
       fun getVMFactory(application: Application): ViewModelProvider.Factory {
