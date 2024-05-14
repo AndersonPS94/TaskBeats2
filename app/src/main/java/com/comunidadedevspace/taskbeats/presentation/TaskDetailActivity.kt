@@ -12,7 +12,7 @@ import android.widget.EditText
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.comunidadedevspace.taskbeats.R
-import com.comunidadedevspace.taskbeats.data.Task
+import com.comunidadedevspace.taskbeats.data.local.Task
 import com.google.android.material.snackbar.Snackbar
 
 class TaskDetailActivity : AppCompatActivity() {

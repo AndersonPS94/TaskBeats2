@@ -9,12 +9,14 @@ import android.widget.LinearLayout
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import com.comunidadedevspace.taskbeats.R
-import com.comunidadedevspace.taskbeats.data.Task
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.comunidadedevspace.taskbeats.data.local.News
+import com.comunidadedevspace.taskbeats.data.local.Task
+
 
 class TaskListFragment : Fragment() {
 
     private lateinit var ctnContent: LinearLayout
+
 
     private val adapter: TaskListAdapter by lazy {
         TaskListAdapter(::openTaskListDetail)
@@ -49,7 +51,7 @@ class TaskListFragment : Fragment() {
 
     private fun listFromDataBase(){
         //Observer
-        val listObserver = Observer<List<Task>> {listTasks ->
+        val listObserver = Observer<List<Task>> { listTasks ->
             if (listTasks.isEmpty()){
                 ctnContent.visibility = View.VISIBLE
             }else {
