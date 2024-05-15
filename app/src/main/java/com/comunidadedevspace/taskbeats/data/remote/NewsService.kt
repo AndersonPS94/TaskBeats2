@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface NewsService {
     @GET("news?category=science")
-    fun fetchNews(): Call<NewsResponse>
+    suspend fun fetchNews(): NewsResponse
     }
