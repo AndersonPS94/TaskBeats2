@@ -59,8 +59,6 @@ dependencies {
     def fragment_version = "1.5.6"
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
 
-
-
     def lifecycle_version = "2.7.0"
     def arch_version = "2.2.0"
 
@@ -99,11 +97,11 @@ dependencies {
     testImplementation "androidx.lifecycle:lifecycle-runtime-testing:$lifecycle_version"
 
 
-
     // optional - Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
 }
